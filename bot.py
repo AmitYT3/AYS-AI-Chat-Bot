@@ -10,15 +10,15 @@ import json
 import threading
 
 
-TOKEN = "token" #insert token here
+TOKEN = "OTcwNjQ1NzI4ODMxNjE0OTc2.G10b8r.SLGzjfUIDrhU0GzjiUGwkVqep0PDuoQJoCPWF0" #insert token here
 intents = nextcord.Intents.default()
 intents.members = True
 
-client = commands.Bot(command_prefix='!') #insert prefix here
-bot = commands.Bot(command_prefix='!', intents=intents)
-command_prefix='!'
+client = commands.Bot(command_prefix='aysai!') #insert prefix here
+bot = commands.Bot(command_prefix='aysai!', intents=intents)
+command_prefix='aysai!'
 
-chatbot = ChatBot('Insert Name here')
+chatbot = ChatBot('AYS AI Chat Bot')
 
 # Create a new trainer for the chatbot
 trainer = ChatterBotCorpusTrainer(chatbot)
@@ -82,7 +82,7 @@ async def on_guild_join(guild):
 
 @bot.event
 async def on_ready():
-    print('Logged in as')
+    print('Logged In As')
     print(bot.user.name)
     print(bot.user.id)
     print('------')
